@@ -1,4 +1,4 @@
-# Efficient-Nonparametric-Bayesian-Hawkes-Processes
+# [Efficient-Nonparametric-Bayesian-Hawkes-Processes](https://arxiv.org/abs/1810.03730)
 Implementation of [Efficient Non-parametric Bayesian Hawkes Processes](https://arxiv.org/abs/1810.03730) in Python3.5. A tutorial is included.
 
 # Required Packages
