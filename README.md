@@ -27,5 +27,8 @@ If you find Efficient Nonparametric Bayesian Hawkes Processes useful in your res
 # Tutorial
 See Gibbs_Hawkes.ipynb.
 
+# Online Demo
+An online demo is on [GoogleColab](https://colab.research.google.com/github/RuiZhang2016/Efficient-Nonparametric-Bayesian-Hawkes-Processes/blob/master/Gibbs_Hawkes.ipynb).
+
 # License
 [MIT License](https://github.com/RuiZhang2016/Efficient-Nonparametric-Bayesian-Hawkes-Processes/blob/master/LICENSE)
