@@ -1,12 +1,10 @@
 import autograd.numpy as np
 from scipy.optimize import minimize
 import matplotlib.pyplot as plt
-from matplotlib import rc
 import cov
 from tick.base import TimeFunction
 from scipy.stats import gamma
 from running_statistic import RunningMean,RunningSTD,ElementWiseRunningStatistic
-rc('text', usetex=True)
 np.seterr(all='warn')
 
 _minimize_method = 'L-BFGS-B'
