@@ -1,8 +1,6 @@
 import autograd.numpy as np
 from scipy.optimize import minimize
-import matplotlib.pyplot as plt
 import cov
-from tick.base import TimeFunction
 from scipy.stats import gamma
 from running_statistic import RunningMean,RunningSTD,ElementWiseRunningStatistic
 np.seterr(all='warn')
@@ -95,13 +93,6 @@ def sij(x, phi, mu):
         pij = (np.append([mu],l))/(mu+np.sum(l))
         sij[idx] = np.random.choice(range(idx + 1), 1, p=pij)
     return sij
-
-_minimize_method = 'L-BFGS-B'
-_minimize_options = dict(maxiter=1000, disp=False)
-
-if _minimize_method == 'L-BFGS-B':
-    _minimize_options['maxcor'] = 15
-    _minimize_options['ftol'] = 0
     
 def infer(hp_data_list, xplot, ab=0.002, num_ite=1000, burn_in=500, run_time=np.pi):
     # GP kernel

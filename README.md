@@ -1,5 +1,5 @@
 # [Efficient-Nonparametric-Bayesian-Hawkes-Processes](https://arxiv.org/abs/1810.03730)
-Implementation of [Efficient Non-parametric Bayesian Hawkes Processes](https://arxiv.org/abs/1810.03730) in Python3.5. A tutorial is included.
+Implementation of [Efficient Non-parametric Bayesian Hawkes Processes](https://arxiv.org/abs/1810.03730) in Python3.5. A tutorial is included. There is no implementation of Halpin's trick which will be uploaded.
 
 # Required Packages
  - numpy

@@ -28,40 +28,6 @@ def k_cosine_nd_basis(x, params):
     phi = np.sqrt(num) * np.prod(cosx, axis=0)
     return phi
 
-# def integral_phiphi(u,d,nterms):
-#     m = cosine_indices(tuple([d, nterms]))[0]
-#     dm, am = m.T-m, m.T+m
-#     integral = np.repeat(dm[:, :, np.newaxis]*1.0, 3, axis=2) #dm.copy()*1.0
-#     non_diag_idx = np.where(~np.eye(integral.shape[0],dtype=bool))
-#     integral[non_diag_idx] = np.sin(dm[non_diag_idx]*u)/2.0/dm[non_diag_idx] + np.sin(am[non_diag_idx]*u)/2.0/am[non_diag_idx]
-#     integral[range(1,nterms),range(1,nterms)] = u/2.0+1.0/4.0/m[0,range(1,nterms)]*np.sin(2.0*m[0,range(1,nterms)]*u)
-#     integral[0,0] = u/2.0
-#     integral = integral*2.0/np.pi
-#     integral[0,1:] = integral[0,1:] /np.sqrt(2)
-#     integral[1:,0] = integral[1:,0] /np.sqrt(2)
-#     integral = 0.5*(integral + integral.T)
-#     return integral
-
-# def integral_phiphi(u,d,nterms):
-#     u = u.reshape((len(u),1,1))
-#     m = cosine_indices(tuple([d, nterms]))[0]
-#     dm, am = m.T-m, m.T+m
-#     dm = np.repeat(dm[np.newaxis, :, :], len(u), axis=0)
-#     am = np.repeat(am[np.newaxis, :, :], len(u), axis=0)
-#     integral = dm.copy()*1.0
-#     eye = np.eye(integral.shape[1],dtype=bool)
-#     eye3d = np.repeat(eye[np.newaxis, :, :], len(u), axis=0)
-#     non_diag_idx = np.where(~eye3d)
-#     integral[non_diag_idx] = ((np.sin(dm*u)/2.0/dm)+np.sin(am*u)/2.0/am)[non_diag_idx]
-
-#     integral[:, range(1,nterms), range(1,nterms)] =  (u/2.0+(1.0/4.0/m*np.sin(2.0*m*u)))[:, 0,range(1,nterms)]
-#     integral[:,0,0] = u.flatten()/2.0
-#     integral *= 2.0/np.pi
-#     integral[:, 0,1:] /= np.sqrt(2)
-#     integral[:, 1:,0] /= np.sqrt(2)
-#     integral = 0.5*(integral + np.array([e.T for e in integral]))
-#     return integral
-
 def integral_phiphi(u, d, nterms):
     sqrt2 = np.sqrt(2)
     len_u = len(u)
