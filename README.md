@@ -17,11 +17,11 @@ They be installed through pip:
 # Citation
 If you find Efficient Nonparametric Bayesian Hawkes Processes useful in your research, please consider citing:
 
-    @article{zhang2018efficient,
+    @article{zhang2019efficient,
     	title={Efficient Non-parametric Bayesian Hawkes Processes},
     	author={Zhang, Rui and Walder, Christian and Rizoiu, Marian Andrei and Xie, Lexing},
-    	journal={arXiv preprint arXiv:1810.03730},
-    	year={2018}
+    	journal={the 28th International Joint Conference on Artificial Intelligence},
+    	year={2019}
     }
     
 # Tutorial
