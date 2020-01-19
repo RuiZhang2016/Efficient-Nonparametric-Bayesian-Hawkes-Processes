@@ -9,7 +9,7 @@ Implementation of [Efficient Non-parametric Bayesian Hawkes Processes](https://a
  - [tick](https://github.com/X-DataInitiative/tick)
  - numpydoc==0.7.0
  
-They be installed through pip:
+They can be installed through pip:
 ```bash
    $ pip3 install numpy scipy matplotlib autograd==1.1.13 tick numpydoc==0.7.0
 ```
