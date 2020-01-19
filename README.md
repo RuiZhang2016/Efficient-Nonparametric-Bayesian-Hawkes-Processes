@@ -3,7 +3,7 @@ Implementation of [Efficient Non-parametric Bayesian Hawkes Processes](https://a
 
 # Required Packages
  - numpy
- - scipy==1.1.0
+ - scipy==1.2.0
  - matplotlib
  - autograd==1.1.13
  - [tick](https://github.com/X-DataInitiative/tick)==0.5.0.0
@@ -11,7 +11,7 @@ Implementation of [Efficient Non-parametric Bayesian Hawkes Processes](https://a
  
 They can be installed through pip:
 ```bash
-   $ pip3 install numpy scipy==1.1.0 matplotlib autograd==1.1.13 tick==0.5.0.0 numpydoc==0.7.0
+   $ pip3 install numpy scipy==1.2.0 matplotlib autograd==1.1.13 tick==0.5.0.0 numpydoc==0.7.0
 ```
 
 # Citation
